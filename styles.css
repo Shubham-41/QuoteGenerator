@@ -1,0 +1,67 @@
+/* ChatGPT Code  */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Quote Card Styles */
+.quote-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.quote-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+}
+
+body,
+.quote-card {
+  transition: background 1s ease; /* Smooth transition */
+}
